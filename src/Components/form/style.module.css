@@ -1,0 +1,70 @@
+.form1 {
+	margin:10px auto;
+	max-width: 400px;
+	padding: 20px 12px 10px 20px;
+	font: 13px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+
+}
+.form1 li {
+	padding: 0;
+	display: block;
+	list-style: none;
+	margin: 10px 0 0 0;
+}
+.form1 label{
+	margin:0 0 3px 0;
+	padding:0px;
+	display:block;
+	font-weight: bold;
+}
+
+.form1 input[type=number],
+select{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	border:1px solid #BEBEBE;
+	padding: 7px;
+	margin:0px;
+	-webkit-transition: all 0.30s ease-in-out;
+	-moz-transition: all 0.30s ease-in-out;
+	-ms-transition: all 0.30s ease-in-out;
+	-o-transition: all 0.30s ease-in-out;
+	outline: none;	
+}
+
+.form1 input[type=number]:focus,
+
+.form1 select:focus{
+	-moz-box-shadow: 0 0 8px #9a72f7;
+	-webkit-box-shadow: 0 0 8px #9a72f7;
+	box-shadow: 0 0 8px #9a72f7;
+	border: 1px solid #9a72f7;
+}
+
+
+.form1 .fieldselect{
+	width: 100%;
+}
+
+.form1 .fieldlong{
+	width: 100%;
+}
+
+.form1 input[type=submit], .btn{
+	background: #512da8;
+	padding: 8px 15px 8px 15px;
+	border: none;
+	color: #fff;
+    cursor: pointer;
+	border-radius: 5px;
+}
+.form1 input[type=submit]:hover, .btn:hover{
+	background: #6e44d1;
+	box-shadow:none;
+	-moz-box-shadow:none;
+	-webkit-box-shadow:none;
+}
+.form1 .required{
+	color:red;
+}
