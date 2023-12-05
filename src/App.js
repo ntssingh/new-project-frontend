@@ -24,12 +24,14 @@ function App() {
 
     </Routes>
 
-      <ProfileSidebar>
+    <ProtectedRoute>
+    <ProfileSidebar>
         <Routes>
-      <Route path="/dashboard/analytics" element={<ProtectedRoute> <AnalyticsPage /> </ProtectedRoute>}/>
-      <Route path="/dashboard/table" element={<ProtectedRoute> <TablePage /> </ProtectedRoute>}/>
+      <Route path="/dashboard/analytics" element={ <AnalyticsPage />}/>
+      <Route path="/dashboard/table" element={ <TablePage />} />
       </Routes>
       </ProfileSidebar>
+      </ProtectedRoute>
 
     <ToastContainer
         position="top-right"
