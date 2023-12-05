@@ -17,7 +17,7 @@ function App() {
   return (
     <BrowserRouter>
     <Routes>
-      <Routes>
+     
       <Route path="/" element={<SignPage/>}/>
      
       <Route path="/activation/:activation_token" element={<ActivationPage/>}/>
