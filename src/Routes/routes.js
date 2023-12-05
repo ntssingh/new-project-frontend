@@ -9,5 +9,5 @@ SignPage,
 ActivationPage,
 TablePage,
 AnalyticsPage,
-ErrorPage
+ErrorPage,
 };
