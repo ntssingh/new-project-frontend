@@ -26,8 +26,6 @@ function App() {
       <Route path="/dashboard/table" element={<ProtectedRoute><ProfileSidebar><TablePage /></ProfileSidebar></ProtectedRoute>} />
     </Routes>
 
-    </Routes>
-
     
 
     <ToastContainer
