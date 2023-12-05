@@ -1,12 +1,11 @@
 import React, { useEffect } from "react";
 import{Route, Routes, BrowserRouter} from "react-router-dom";
-import {SignPage, ActivationPage, TablePage, AnalyticsPage} from "./Routes/routes"
+import {SignPage, ActivationPage, TablePage, AnalyticsPage, ErrorPage} from "./Routes/routes"
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Store from "./redux/store";
 import ProtectedRoute from "./Routes/ProtectedRoute";
 import { loadUser } from "./redux/actions/user";
-import Form from "./Components/form/datacollection";
 import ProfileSidebar from "./Components/ProfileSidebar";
 
 
@@ -19,7 +18,7 @@ function App() {
     <BrowserRouter>
     <Routes>
       <Route path="/" element={<SignPage/>}/>
-      <Route path="/form" element={<Form/>}/>
+      <Route path="*" element={<ErrorPage/>}/>
       <Route path="/activation/:activation_token" element={<ActivationPage/>}/>
 
     </Routes>
