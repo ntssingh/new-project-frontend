@@ -17,20 +17,18 @@ function App() {
   return (
     <BrowserRouter>
     <Routes>
+      <Routes>
       <Route path="/" element={<SignPage/>}/>
-      <Route path="*" element={<ErrorPage/>}/>
+     
       <Route path="/activation/:activation_token" element={<ActivationPage/>}/>
+      <Route path="*" element={<ErrorPage/>}/>
+      <Route path="/dashboard/analytics" element={<ProtectedRoute><ProfileSidebar> <AnalyticsPage /></ProfileSidebar></ProtectedRoute>}/>
+      <Route path="/dashboard/table" element={<ProtectedRoute><ProfileSidebar><TablePage /></ProfileSidebar></ProtectedRoute>} />
+    </Routes>
 
     </Routes>
 
-    <ProtectedRoute>
-    <ProfileSidebar>
-        <Routes>
-      <Route path="/dashboard/analytics" element={ <AnalyticsPage />}/>
-      <Route path="/dashboard/table" element={ <TablePage />} />
-      </Routes>
-      </ProfileSidebar>
-      </ProtectedRoute>
+    
 
     <ToastContainer
         position="top-right"
